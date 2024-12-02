@@ -1,0 +1,94 @@
+/* General Reset and Box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #54473F;
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+  }
+  
+  .location-container {
+    background: #9A7E6F;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #54473F;
+    margin-bottom: 20px;
+  }
+  
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .location-item {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .location-item i {
+    font-size: 24px;
+    color: #54473F;
+  }
+  
+  .location-item .info-text {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  /* Add a glowing animation for the icons and text */
+  .location-item i,
+  .location-item .info-text {
+    animation: glow 1.5s infinite alternate;
+  }
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #54473F, 0 0 10px #54473F, 0 0 15px #54473F, 0 0 20px #54473F;
+    }
+    100% {
+      text-shadow: 0 0 10px #CBD2A4, 0 0 20px #CBD2A4, 0 0 30px #CBD2A4, 0 0 40px #CBD2A4;
+    }
+  }
+  .map-container {
+    width: 100%;
+    max-width: 800px; /* Adjust map width */
+    margin: 0 auto;
+  }
+  .map-container img {
+    height: 200px;
+    width: 400px;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.map-image:hover {
+    transform: scale(1.05); /* Zoom-in effect */
+}
+  iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  

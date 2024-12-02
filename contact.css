@@ -1,0 +1,101 @@
+/* contact.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 1.3s ease-in-out;
+}
+
+.contact-container:hover {
+  transform: scale(1.03); /* Slight scale on hover */
+}
+
+.title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-item {
+  font-size: 18px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  width: 100%;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item:hover {
+  background-color: #007BFF;
+  color: #fff;
+  transform: translateX(10px);
+}
+
+.contact-item i {
+  color: #007BFF;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.contact-item i:hover {
+  color: #fff;
+}
+
+.info-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.copy-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #218838;
+}
+
+.copy-btn:active {
+  background-color: #1e7e34;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.contact-container {
+  animation: fadeIn 1s ease-in-out;
+}
